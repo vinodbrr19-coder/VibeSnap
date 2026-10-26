@@ -37,25 +37,29 @@ class HomeScreen extends StatelessWidget {
         elevation: 0,
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Icon(Icons.camera_alt, size: 80, color: Color(0xFFD8A943)),
-            SizedBox(height: 20),
-            Text(
-              'Welcome to VibeSnap!',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: Color(0xFFF7F0F8),
+        child: Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Icon(Icons.camera_alt, size: 80, color: Color(0xFFD8A943)),
+              SizedBox(height: 20),
+              Text(
+                'Welcome to VibeSnap!',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFFF7F0F8),
+                ),
               ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              'Share your moments effortlessly.',
-              style: TextStyle(fontSize: 16, color: Color(0xFFC6B8CB)),
-            ),
-          ],
+              SizedBox(height: 10),
+              Text(
+                'Share your moments effortlessly.',
+                style: TextStyle(fontSize: 16, color: Color(0xFFC6B8CB)),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
         ),
       ),
     );
